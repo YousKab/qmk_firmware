@@ -51,4 +51,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
 #define DEBOUNCING_DELAY 5
 
+// This is a 7-bit address, that gets left-shifted and bit 0
+// set to 0 for write, 1 for read (as per I2C protocol)
+// The address will vary depending on your wiring:
+// 00 <-> GND
+// 01 <-> SCL
+// 10 <-> SDA
+// 11 <-> VCC
+// ADDR1 represents A1:A0 of the 7-bit address.
+// ADDR2 represents A3:A2 of the 7-bit address.
+// The result is: 0b101(ADDR2)(ADDR1)
+#define DRIVER_ADDR_1 0b1010000
+#define DRIVER_ADDR_2 0b1010000 // this is here for compliancy reasons.
+
+#define DRIVER_COUNT 1
+#define DRIVER_1_LED_TOTAL 6
+#define DRIVER_LED_TOTAL DRIVER_1_LED_TOTAL
+
 #endif
