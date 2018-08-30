@@ -1,5 +1,5 @@
-#ifndef KBOD_H
-#define KBOD_H
+#ifndef KBOD_2X2_H
+#define KBOD_2X2_H
 
 #include "quantum.h"
 

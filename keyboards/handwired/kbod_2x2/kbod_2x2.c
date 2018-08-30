@@ -1,4 +1,4 @@
-#include "kbod.h"
+#include "kbod_2x2.h"
 
 void matrix_init_kb(void) {
 	// put your keyboard start-up code here
